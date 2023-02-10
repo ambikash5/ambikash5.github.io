@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    margin:0;
+    padding: 0;
+    
+
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar{
+    background-color: #2e2e38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+    height: 60px;
+    position: relative;
+    
+}
+.navbar div{
+ padding: 14px 30px;
+ display: flex;
+}
+.search{
+    width: 270px;
+    max-width: 300px;
+    height: 100%;
+    
+
+}
+.search form{
+    position: absolute;
+    height: 100%;
+
+}
+.search input{
+    width: 130%;
+    height: 50%;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+}
+.search input:focus{
+    outline: none;
+}
+.search button{
+   
+        position: absolute;
+        top:0;
+        right: -30px;
+        height: 50%;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+    .search button:hover{
+        color: rgb(228, 214, 8);
+    }
+
+.navbar h1{
+    color: rgb(228, 214, 8);
+    padding: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+    
+}
+
+.main-list{
+    display: flex;
+    list-style: none;
+    padding-bottom: 20px;
+    align-items: center;
+    
+
+}
+.main-list li{
+    padding: 20px 10px;
+    height: 100%;
+    margin-top: auto;
+    transition: all ease-out 0.2s;
+}
+.main-list li:hover{
+    border-bottom:4px solid rgb(228, 214, 8);
+   
+}
+
+.active{
+    border-bottom:4px solid rgb(228, 214, 8);
+   
+}
+
+nav .open-menu{
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+    cursor:pointer;
+
+}
+nav  .close-menu{
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+    cursor:pointer;
+}
+.banner img{
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+.banner {
+    width: 100%;
+    display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.banner a {
+  position: absolute;
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: rgb(228, 214, 8);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: ease-in 0.2s;
+  box-shadow: 2px 2px 1px rgba(37, 35, 35,0.8);
+  
+}
+
+.banner  a:hover{
+    background-color: rgba(228, 214, 8,0.7)
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10%;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: black;
+
+}
+.our-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+
+.subservice-1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: fit-content;
+    
+}
+.subservice-1 h4{
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+.subservice-1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+    
+    
+}
+.subservice-1 div p{
+    
+    color: black;
+    line-height: 1.5rem;
+    padding: 10px;
+    text-align: justify;
+}
+
+.subservice-1 div p,ul{
+    color: black;
+    line-height: 1.5rem;
+    padding: 10px;
+    
+}
+
+.subservice-1 div li{
+    list-style-type: none;
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 1em;
+    
+}
+.subservice-1 li::before{
+    content: '✓';
+    padding-right: 10px;
+}
+.subservice-1 div h3{
+    background-color: rgb(228, 214, 8);
+    width: fit-content;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    box-shadow: 2px 2px 1px rgba(37, 35, 35,0.8);
+}
+.subservice-1 div h3:hover{
+    background-color: rgba(228, 214, 8,0.8)
+
+}
+
+.subservice-1 div a{
+    text-decoration: none;
+    position: relative;
+    margin-top: auto;
+    
+
+}
+
+
+.subservice-2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: fit-content;
+    
+}
+.subservice-2 h4{
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+.subservice-2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+    
+    
+}
+.subservice-2 div p{
+    
+    color: black;
+    line-height: 1.5rem;
+    padding: 10px;
+    text-align: justify;
+}
+
+.subservice-2 div ul{
+   align-self: flex-start;
+    color: black;
+    line-height: 1.5rem;
+    padding: 10px;
+    
+}
+
+.subservice-2 div li{
+    list-style-type: none;
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 1em;
+   
+    
+}
+.subservice-2 li::before{
+    content: '✓';
+    padding-right: 10px;
+}
+.subservice-2 div h3{
+    background-color: rgb(228, 214, 8);
+    width: fit-content;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px rgba(37, 35, 35,0.8);
+    transition: ease-in 0.2s;
+}
+.subservice-2 div h3:hover{
+    background-color: rgba(228, 214, 8,0.8)
+}
+
+.subservice-2 div a{
+    text-decoration: none;
+    position: relative;
+    margin-top: auto;
+    
+}
+
+footer{
+    background-color: #2e2e38;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+footer h1{
+    color: rgb(228, 214, 8);
+}
+.foot{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.foot div{
+    padding: 20px;
+}
+
+.foot div h3{
+    color: rgb(228, 214, 8);
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+   /* .navbar a{
+    width :100%;
+    display: flex;
+    justify-content: center;
+   }
+   
+    .search form
+    {
+        display: none;
+    }
+   
+    .navbar ul li{
+        display: none;
+    }*/
+    .navbar div{
+    
+        padding: 0;
+       }
+    .main-list{
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #2e2e38;
+        transition: top 1s ease 0s;
+        display: none;
+    }
+    nav .main-list .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+     nav .open-menu {
+        display: block;
+        margin: 20px;
+      }
+    .search form {
+        display: none;
+    }
+    .subservice-1{ 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .subservice-1 div{
+        width: 100%;
+    }
+    .subservice-2 div{
+        width: 100%;
+    }
+    .subservice-2{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .foot{
+        flex-direction: column;
+    }
+}
