@@ -13,13 +13,14 @@ header{
     z-index: 2;
 }
 .navbar{
-    background-color: #2e2e38;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;    
-    height: 60px;
+    height: 100px;
     position: relative;
+    border-bottom: 12px solid rgb(27, 76, 199);
     
 }
 .navbar div{
@@ -33,71 +34,60 @@ header{
     
 
 }
-.search form{
-    position: absolute;
-    height: 100%;
-
-}
-.search input{
-    width: 130%;
-    height: 50%;
-    border-radius: 15px;
-    outline: none;
-    padding: 10px;
-}
-.search input:focus{
-    outline: none;
-}
 .search button{
-   
-        position: absolute;
-        top:0;
-        right: -30px;
-        height: 50%;
+        font-size: 18px;
         cursor: pointer;
         border: none;
         background: none;
     }
     .search button:hover{
-        color: rgb(228, 214, 8);
+        color: #1B6AC7;
     }
 
 .navbar h1{
-    color: rgb(228, 214, 8);
+    color: #1B6AC7;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+.navbar h1 img{
+    padding: 0 5px;
 }
 .navbar a{
     text-decoration: none;
-    color: white;
     font-size: 18px;
-
     
 }
 
 .main-list{
     display: flex;
     list-style: none;
-    padding-bottom: 20px;
+    padding: 15px 0px;
     align-items: center;
-    padding-top: 12px;
+    
 
 }
 .main-list li{
     padding: 20px 10px;
     height: 100%;
-    margin-top: auto;
+    font-weight: 600;
+    margin:auto 10px ;
+    
     transition: all ease-out 0.2s;
 }
 .main-list li:hover{
-    border-bottom:4px solid rgb(228, 214, 8);
+    border-top:4px solid #1B6AC7;
+    color: #2172f4;
    
 }
-
+.navbar a:hover{
+    color: #2172f4;
+}
 .active{
-    border-bottom:4px solid rgb(228, 214, 8);
+    border-top:4px solid black;
    
 }
-
 nav .open-menu{
     font-size: 1.5rem;
     color: white;
