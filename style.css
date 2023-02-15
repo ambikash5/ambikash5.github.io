@@ -18,30 +18,26 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;    
-    height: 100px;
+    height: 130px;
     position: relative;
-    border-bottom: 12px solid rgb(27, 76, 199);
+    color: #1B6AC7;
+    border-bottom: 30px solid #1B6AC7;
     
 }
 .navbar div{
  padding: 14px 30px;
  display: flex;
+ font-size: 18px;
 }
-.search{
-    width: 270px;
-    max-width: 300px;
-    height: 100%;
-    
 
-}
-.search button{
+.navbar div button{
         font-size: 18px;
         color: black;
         cursor: pointer;
         border: none;
         background: none;
     }
-    .search button:hover{
+    .navbar div button:hover{
         color: #1B6AC7;
     }
 
@@ -72,9 +68,10 @@ header{
 .main-list li{
     padding: 20px 10px;
     height: 100%;
-    font-weight: 600;
+    font-weight: 500;
     margin:auto 10px ;
-    transition: all ease-out 0.2s;
+    transition: all ease-in 0.2s;
+    border-top: 2px solid black;
 }
 .main-list li:hover{
     border-top:4px solid #1B6AC7;
@@ -202,14 +199,14 @@ nav  .close-menu{
 }
 .subservice-1 div p{
     
-    color: black;
+   
     line-height: 1.5rem;
     padding: 10px;
     text-align: justify;
 }
 
 .subservice-1 div p,ul{
-    color: black;
+   
     line-height: 1.5rem;
     padding: 10px;
     
@@ -227,17 +224,18 @@ nav  .close-menu{
     padding-right: 10px;
 }
 .subservice-1 div h3{
-    background-color: #1B6AC7;
+    background-color: rgb(65, 65, 65);
     width: fit-content;
     padding: 10px;
-    color: white;
+    color: rgb(255,182,0);
     font-weight: 700;
     cursor: pointer;
     transition: ease-in 0.2s;
-    box-shadow: 2px 2px 1px rgba(37, 35, 35,0.8);
+   
 }
 .subservice-1 div h3:hover{
-    background-color: #2172f4;
+    background-color:  rgb(255,182,0);
+    color: rgb(65, 65, 65);
 
 }
 
@@ -304,17 +302,17 @@ nav  .close-menu{
     padding-right: 10px;
 }
 .subservice-2 div h3{
-    background-color: #1B6AC7;
     width: fit-content;
     padding: 10px;
-    color: white;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: 2px 2px 1px rgba(37, 35, 35,0.8);
+    color:  rgb(255,182,0);
+    background-color: rgb(65, 65, 65);
     transition: ease-in 0.2s;
 }
 .subservice-2 div h3:hover{
-    background-color: #2172f4;
+    background-color:  rgb(255,182,0);
+    color: rgb(65, 65, 65);
 }
 
 .subservice-2 div a{
@@ -324,35 +322,82 @@ nav  .close-menu{
     padding: 0 30px;
 }
 
-footer{
-    background-color: #2e2e38;
+footer div{
+    
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: auto;
+    
+    
+}
+footer form{
+    display: flex;
     flex-direction: column;
-    color: white;
-}
-footer h1{
-    color: rgb(228, 214, 8);
-}
-.foot{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: space-around;
     padding: 20px;
+    width:40%;
+    
+}
+footer form >*{
+    padding: 10px 10px;
 }
 
-.foot div{
-    padding: 20px;
-}
-
-.foot div h3{
-    color: rgb(228, 214, 8);
+form div{
+    width: 100%;
     display: flex;
-    width: 200px;
     justify-content: center;
 }
+form div >*{
+    padding: 5px 2px;
+}
+form input{
+    padding: 5px;
+}
+.fname
+{
+    display: flex;
+    justify-content: space-between;
+}
+.fname input{
+    width: 85%;
 
+}
+footer form button{
+    width: fit-content;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(204, 98, 1);
+    color: white;
+    border: none;
+}
+.contact{
+    background-color: rgb(204, 98, 1);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+}
+.contact >*{
+    padding: 20px;
+}
+.icon i{
+    padding: 5px;
+}
+.email-phone{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+
+}
+
+.email-phone input{
+    width:85%;
+}
+.copyright{
+    background-color: #1B6AC7;
+    color: white;
+}
 @media (max-width: 500px) {
    /* .navbar a{
     width :100%;

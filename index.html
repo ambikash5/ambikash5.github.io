@@ -12,8 +12,9 @@
 <body>
     <header>
     <nav class="navbar">
+        <div><a href="#"><h1><img src="./Resources/logo.jpeg" alt="logo">Anag & Associates</h1></a></div>
         <div>
-           <div><a href="#"><h1><img src="./Resources/logo.jpeg" alt="logo">Anag & Associates</h1></a></div>
+          
             <ul class="main-list">
             
            <li class="active"><a href="#">Home</a></li>
@@ -27,13 +28,10 @@
         </li>
            <li><a href="#contact">Contact Us</a></li>
         </ul>
-    </div>
-    <div class="search">
-       
-        
         <button type="submit"><i class="fa-solid fa-magnifying-glass" style="padding: 0px 5px;"></i>Search</button>
-        
     </div>
+           
+    
     
     <div class="open-menu"><i class="fa-solid fa-bars"></i></div>
     <div class="close-menu"><i class="fa-sharp fa-solid fa-xmark"></i></div>
@@ -138,25 +136,60 @@
 
 
 <footer id="contact">
-    <h1>Anag & Associates</h1>
-    <p>Licence Number: 123-456-7890</p>
-    <div class="foot">
-        <div class="head-office">
-            <h3>Head office</h3>
-           <p> Phone: +91 704-439-9532 </p>
-           <p> Email: anil.kumar@anag.com</p>
-           <p> Address: NSC Bose Road, Tollygunge<br>
-            Kolkata, WB, India 700040</p>
+    <div >
+        <div class="contact">
+            <h1>Get In Touch</h1>
+            <p>
+                NSC Bose Road, Tollygunge <br>
+                Kolkata, WB, India 700040
+            </p>
+            <h3>
+                Contact-7685951222
+            </h3>
+            <h3>
+                anag.in/anmolk.sharmaco@gmail.com
+            </h3>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
         </div>
-        <div class="other">
-            <h3>Other Locations</h3>
-            <P>Phone: +91 768-595-1222 </P>
-            <P>Email: anmol.kumar@anag.com</P>
-            <P>Main Road, Chas, Bokaro<br>
-            Jharkhand, India 827013 </P>
+        <form>
+            <div class="fname">
+            <label for="full-name">Full Name: </label>
+            <input type="text" name="full name" id="full-name" >
         </div>
+            
+        <div class="email-phone">
+            <div>
+        <label for="phone">Phone: </label>
+        <input type="tel" name="phone" id="phone">
     </div>
-    <p>© 2020 by Anag Associates</p>
+        <div>
+        <label for="email">Email:  </label>
+        <input type="email" name="mail" id="mail">
+    </div>
+        </div>
+        <!-- <div class="options">
+            <select name="services" id="services">
+                
+            </select>
+        </div>
+         -->
+        <label for="message">
+            Message: </label>
+            <textarea name="message" id="message" cols="20" rows="10" style="resize: none;" ></textarea>
+            <div>
+            <button type="submit">Send Message</button>
+        </div>
+        </form>
+
+    </div>
+    <div class="copyright">
+        © 2020 by Anag Associates
+    </div>
 </footer>
 <script src="index.js"></script>
 </body>
