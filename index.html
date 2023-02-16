@@ -159,30 +159,66 @@
         <form>
             <div class="fname">
             <label for="full-name">Full Name: </label>
-            <input type="text" name="full name" id="full-name" >
+            <input type="text" name="full name" id="full-name" required >
         </div>
             
         <div class="email-phone">
             <div>
         <label for="phone">Phone: </label>
-        <input type="tel" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone" required>
     </div>
         <div>
         <label for="email">Email:  </label>
-        <input type="email" name="mail" id="mail">
+        <input type="email" name="mail" id="mail" required>
     </div>
         </div>
-        <!-- <div class="options">
-            <select name="services" id="services">
+        <div class="options">
+            <label for="Services">Select Service : </label>
+            <select name="services" id="services" required>
+                <option value="" selected disabled hidden>Select an Option</option>
+
+                <optgroup label="Outsourcing Services">
+                <option value="Book keeping for businesses">Book keeping for businesses</option>
+                <option value="Book keeping for CA/CPA">Book keeping for CA/CPA</option>
+                <option value="Payroll Outsourcing">Payroll Outsourcing</option>
+                <option value="Virtual Accounting Resource">Virtual Accounting Resource</option>
+                <option value="Site visits/ Discreet Audits">Site visits/ Discreet Audits</option>
+            </optgroup>
+            
+            <optgroup label=" Registration & Compliances">
+                <option value="Business Incorporation">Business Incorporation</option>
+                <option value="Goods & Services Tax">Goods & Services Tax</option>
+                <option value="Trademark">Trademark</option>
+                <option value="Udyam Registration">Udyam Registration</option>
+                <option value="Import Export Code">Import Export Code</option>
+                <option value="Trade License">Trade License</option>
+                <option value="FSSAI License">FSSAI License</option>
+                <option value="Spice Board Registration">Spice Board Registration</option>
+                <option value="Provident Fund & ESI">Provident Fund & ESI</option>
                 
-            </select>
+            </optgroup>
+            <optgroup label="Advisory Services">
+                <option value="Business proposal preparation">Business proposal preparation​​</option>
+                <option value="Bank Financing proposals">Bank Financing proposals</option>
+                <option value="Fraud Risk Management">Fraud Risk Management</option>
+                <option value="Internal Audit">Internal Audit</option>
+                <option value="Enterprise Risk Management">Enterprise Risk Management</option>
+            </optgroup>
+            <optgroup label="Tax Planning Services">
+                <option value="Income Tax Planning">Income Tax Planning</option>
+                <option value="Income Tax Planning">Income Tax Planning</option>
+                <option value="Succession Planning">Succession Planning</option>
+            </optgroup>
+            
+        </select>
         </div>
-         -->
+        <div class="txtar">
         <label for="message">
             Message: </label>
             <textarea name="message" id="message" cols="20" rows="10" style="resize: none;" ></textarea>
+        </div>
             <div>
-            <button type="submit">Send Message</button>
+            <button type="submit" >Send Message</button>
         </div>
         </form>
 

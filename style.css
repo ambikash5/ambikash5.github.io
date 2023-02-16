@@ -54,7 +54,7 @@ header{
 .navbar a{
     text-decoration: none;
     font-size: 18px;
-    
+    color: black;
 }
 
 .main-list{
@@ -242,8 +242,7 @@ nav  .close-menu{
 .subservice-1 div a{
     text-decoration: none;
     position: relative;
-    
-    padding: 0 30px;
+    padding-left: 5%;
 }
 
 
@@ -318,8 +317,7 @@ nav  .close-menu{
 .subservice-2 div a{
     text-decoration: none;
     position: relative;
-    
-    padding: 0 30px;
+    padding-left: 5%;
 }
 
 footer div{
@@ -369,6 +367,10 @@ footer form button{
     background-color: rgb(204, 98, 1);
     color: white;
     border: none;
+    cursor: pointer;
+}
+footer form button:hover{
+    background-color: rgba(204, 98, 1,0.8);
 }
 .contact{
     background-color: rgb(204, 98, 1);
@@ -390,10 +392,25 @@ footer form button{
     
 
 }
-
+.txtar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 16px;
+}
+.txtar textarea{
+    width: 100%;
+}
 .email-phone input{
     width:85%;
 }
+
+.options select{
+    width: 80%;
+    text-align: center;
+}
+
 .copyright{
     background-color: #1B6AC7;
     color: white;
