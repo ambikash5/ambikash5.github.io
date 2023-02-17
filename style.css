@@ -21,7 +21,7 @@ header{
     height: 130px;
     position: relative;
     color: #1B6AC7;
-    border-bottom: 30px solid #1B6AC7;
+    
     
 }
 .navbar div{
@@ -86,16 +86,21 @@ header{
    
 }
 
+.mobile-search{
+    display: none;
+    color: black;
+    padding: 0px 5px
+}
 nav .open-menu{
     font-size: 1.5rem;
-    color: white;
+    
     display: none;
     cursor:pointer;
 
 }
 nav  .close-menu{
     font-size: 1.5rem;
-    color: white;
+    
     display: none;
     cursor:pointer;
 }
@@ -243,6 +248,7 @@ nav  .close-menu{
     text-decoration: none;
     position: relative;
     padding-left: 5%;
+    margin-top: auto;
 }
 
 
@@ -318,6 +324,7 @@ nav  .close-menu{
     text-decoration: none;
     position: relative;
     padding-left: 5%;
+    margin-top: auto;
 }
 
 footer div{
@@ -407,7 +414,7 @@ footer form button:hover{
 }
 
 .options select{
-    width: 77%;
+    width: 80%;
     text-align: center;
 }
 
@@ -430,6 +437,14 @@ footer form button:hover{
     .navbar ul li{
         display: none;
     }*/
+    .desktop-search{
+        display: none;
+    }
+    .mobile-search{
+        display: flex;
+        color: black;
+        padding: 0px 5px
+    }
     .navbar div{
     
         padding: 0;
