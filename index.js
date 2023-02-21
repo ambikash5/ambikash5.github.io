@@ -3,7 +3,12 @@ const closeMenu = document.querySelector('.close-menu');
 const openMenu = document.querySelector('.open-menu');
 const menu_items = document.querySelectorAll('nav .main-list li a');
 
+const service_menu = document.getElementById("service_menu");
 
+function click_services(){
+    service_menu.classList.toggle("mega-menu");
+    
+}
 
 
 openMenu.addEventListener('click',show);
@@ -24,8 +29,3 @@ function close(){
     mainMenu.style.top = '-100%';
 }
 
-function myalert() {
-    alert("Welcome to GeeksforGeeks.\n " +
-        "It is the best portal for computer" +
-                "science enthusiasts!");
-}

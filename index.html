@@ -12,23 +12,64 @@
 <body>
     <header>
     <nav class="navbar">
-        <div><a href="#"><h1><img src="./Resources/logo.jpeg" alt="logo">Anag & Associates</h1></a></div>
-        <div>
+        <div class="navbardiv"><a href="#"><h1><img src="./Resources/logo.jpeg" alt="logo">Anag & Associates</h1></a></div>
+        <div class="navbardiv">
           
             <ul class="main-list">
             
-           <li class="active"><a href="#">Home</a></li>
-           <li><a href="./services/services.html">Services</a>
-            <!-- <ul class="sub-list">
-                <li><a href="#">Outsourcing Services</a></li>
-                <li><a href="#">Registration & Compliances</a></li>
-                <li><a href="#">Advisory Services</a></li>
-                <li><a href="#">Tax Planning Services</a></li>
-            </ul> -->
+           <li class="menu-item"><a href="./index.html">Home</a></li>
+           <li class="menu-item" id="service_menu" onclick="click_services()" ><a href="#">Services</a>
+              <div class="mega-menu-wrapper slideInUp" >
+                            <div class="mega-menu-col">
+                                <h5>Outsourcing Services</h5>
+                                <ul class="mega-sub-menu">
+                                    <li><a href="#">Book keeping for businesses</a></li>
+                                    <li><a href="#">Book keeping for CA/CPA</a></li>
+                                    <li><a href="#">Payroll Outsourcing</a></li>
+                                    <li><a href="#">Virtual Accounting Resource</a></li>
+                                    <li><a href="#">Site visits/ Discreet Audits</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-col">
+                                <h5>Registration & Compliances</h5>
+                                <ul class="mega-sub-menu">
+                                    <li><a href="#">Business Incorporation</a></li>
+                                    <li><a href="#">Trade License</a></li>
+                                    <li><a href="#">Goods & Services Tax</a></li>
+                                    <li><a href="#">FSSAI License</a></li>
+                                    <li><a href="#">Trademark</a></li>
+                                    <li><a href="#">Spice Board Registration</a></li>
+                                    <li><a href="#">Udyam Registration</a></li>
+                                    <li><a href="#">Provident Fund & ESI</a></li>
+                                    <li><a href="#">Import Export Code</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-col">
+                                <h5>Advisory Services</h5>
+                                <ul class="mega-sub-menu">
+                                    <li><a href="#">Business proposal preparation</a></li>
+                                    <li><a href="#">Bank Financing proposals</a></li>
+                                    <li><a href="#">Fraud Risk Management</a></li>
+                                    <li><a href="#">Internal Audit</a></li>
+                                    <li><a href="#">Enterprise Risk Management</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-col">
+                                <h5>Tax Planning Services</h5>
+                                <ul class="mega-sub-menu">
+                                    <li><a href="#">Income Tax Planning</a></li>
+                                    <li><a href="#">Expat Tax Filings</a></li>
+                                    <li><a href="#">Succession Planning</a></li>
+                                </ul>
+                            </div>
+                            <i class="fa-solid fa-xmark service-close"></i>
+                        </div>
+            
         </li>
-           <li><a href="#contact">Contact Us</a></li>
+           <li class="menu-item"><a href="#contact">Contact Us</a></li>
+           <button type="submit"class= "desktop-search"><i class="fa-solid fa-magnifying-glass " style="padding: 0px 5px;"></i>Search</button>
         </ul>
-        <button type="submit"class= "desktop-search"><i class="fa-solid fa-magnifying-glass " style="padding: 0px 5px;"></i>Search</button>
+        
         <button type="submit" class="mobile-search"><i class="fa-solid fa-magnifying-glass " ></i></button>
     </div>
            
@@ -51,8 +92,7 @@
             An industry leading experience for your business and entire international team to support book keeping, payroll and business advisory across geographies.
         </p>
     
-    <a href="#">
-    <h3>Read More</h3>
+    <a href="#">Read More
     </a></div>
 </div>
     </div>

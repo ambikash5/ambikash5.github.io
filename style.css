@@ -18,15 +18,14 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;    
-    height: 100px;
+    height: 130px;
     position: relative;
     color: #1B6AC7;
-    
+    border-bottom: 20px solid #1B6AC7;
     
 }
-.navbar div{
+.navbardiv{
  padding: 14px 30px;
- display: flex;
  font-size: 18px;
 }
 
@@ -65,15 +64,16 @@ header{
     
 
 }
-.main-list li{
+.menu-item{
     padding: 20px 10px;
     height: 100%;
     font-weight: 500;
     margin:auto 10px ;
     transition: all ease-in 0.2s;
     border-top: 2px solid black;
+    
 }
-.main-list li:hover{
+.menu-item:hover{
     border-top:4px solid #1B6AC7;
     color: #2172f4;
    
@@ -81,11 +81,81 @@ header{
 .navbar a:hover{
     color: #2172f4;
 }
-.active{
-    border-top:4px solid black;
-   
-}
 
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(15%);
+    transform: translateY(15%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(15%);
+    transform: translateY(15%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    .mega-menu-wrapper {
+        position: absolute;
+        left: 10%;
+        top: 130px;
+        display: none;
+        padding: 20px 25px;
+        background-color: #ffffff;
+        border-top: 3px solid #1B6AC7;
+        width: 80%;
+        box-shadow: 0 5px 8px rgb(0 0 0 / 15%);
+    
+      }
+     .mega-menu .mega-menu-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+      } 
+      .mega-menu .mega-menu-wrapper .mega-menu-col h5 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        padding-left: 8px;
+      }
+      .mega-menu .mega-menu-wrapper .mega-menu-col ul {
+        list-style: none;
+        margin-left: 0px;
+        margin-right: 20px;
+      }
+      .mega-menu .mega-menu-wrapper .mega-menu-col ul li a {
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        font-size: 14px;
+        color: black;
+      }
+      .mega-menu .mega-menu-wrapper .mega-menu-col ul li:hover a {
+        background-color: rgba(222, 225, 226, 0.466);
+      }
+      .service-close{
+      font-weight: 900;
+      position: fixed;
+      padding: 10px 5px;
+      color: black;
+      right: 2%;
+      }
 .mobile-search{
     display: none;
     color: black;
@@ -123,12 +193,12 @@ nav  .close-menu{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 5%;
+    
 }
 .banner-div div {
     
     width: 50%;
-  padding: 14% 7%;
+  padding: 11%;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -140,15 +210,15 @@ nav  .close-menu{
 }
 .banner-div div p{
     color: white;
-    font-size: 22px;
+    font-size: 16px;
     padding: 20px 0;
 }
 .banner-div div a
 {   
    
-    background-color: #1B6AC7;
-    padding: 12px 24px;
-    color: white;
+    background-color: rgb(65, 65, 65);
+    padding: 5px 24px;
+    color: rgb(255,182,0);
     font-size: 16px;
     cursor: pointer;
    text-decoration: none;
@@ -157,42 +227,10 @@ nav  .close-menu{
 }
 
 .banner-div div  a:hover{
-    background-color: #2172f4;
+    background-color:  rgb(215, 209, 193);
+    color:black;
 } 
-/* .banner  div {
-  position: absolute;
-  width: 50%;
-  padding: 14% 7%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
- flex-direction: column;
-  
-}
-.banner div h1{
-    color: white;
-}
-.banner div p{
-    color: white;
-    font-size: 22px;
-    padding: 20px 0;
-}
-.banner div a
-{   
-   
-    background-color: #1B6AC7;
-    padding: 12px 24px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-   text-decoration: none;
-    transition: ease-in 0.2s;
-    box-shadow: 2px 2px 1px rgba(37, 35, 35,0.8);
-}
 
-.banner  a:hover{
-    background-color: #2172f4;
-} */
 .content{
     display: flex;
     flex-direction: column;
@@ -365,7 +403,7 @@ nav  .close-menu{
 footer div{
     
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: auto;
     padding: 10px 0;
     
