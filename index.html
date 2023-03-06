@@ -1,276 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" sizes="192x192" href="/Resources/logo.jpeg">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" sizes="192x192" href="/Resources/logo.jpeg" />
+    <link rel="stylesheet" href="style.css" />
     <title>CA/CPA Services in India | Anag Associates</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    <nav class="navbar">
-        <div class="navbardiv"><a href="#"><h1><img src="./Resources/logo.jpeg" alt="logo">Anag & Associates</h1></a></div>
+      <nav class="navbar">
         <div class="navbardiv">
-          
-            <ul class="main-list">
-            
-           <li class="menu-item"><a href="./index.html">Home</a></li>
-           <li class="menu-item" id="service_menu" onclick="click_services()" ><a href="#">Services</a>
-              <div class="mega-menu-wrapper slideInUp" >
-                            <div class="mega-menu-col">
-                                <h5>Outsourcing Services</h5>
-                                <ul class="mega-sub-menu">
-                                    <li><a href="#">Book keeping for businesses</a></li>
-                                    <li><a href="#">Book keeping for CA/CPA</a></li>
-                                    <li><a href="#">Payroll Outsourcing</a></li>
-                                    <li><a href="#">Virtual Accounting Resource</a></li>
-                                    <li><a href="#">Site visits/ Discreet Audits</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-menu-col">
-                                <h5>Registration & Compliances</h5>
-                                <ul class="mega-sub-menu">
-                                    <li><a href="#">Business Incorporation</a></li>
-                                    <li><a href="#">Trade License</a></li>
-                                    <li><a href="#">Goods & Services Tax</a></li>
-                                    <li><a href="#">FSSAI License</a></li>
-                                    <li><a href="#">Trademark</a></li>
-                                    <li><a href="#">Spice Board Registration</a></li>
-                                    <li><a href="#">Udyam Registration</a></li>
-                                    <li><a href="#">Provident Fund & ESI</a></li>
-                                    <li><a href="#">Import Export Code</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-menu-col">
-                                <h5>Advisory Services</h5>
-                                <ul class="mega-sub-menu">
-                                    <li><a href="#">Business proposal preparation</a></li>
-                                    <li><a href="#">Bank Financing proposals</a></li>
-                                    <li><a href="#">Fraud Risk Management</a></li>
-                                    <li><a href="#">Internal Audit</a></li>
-                                    <li><a href="#">Enterprise Risk Management</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-menu-col">
-                                <h5>Tax Planning Services</h5>
-                                <ul class="mega-sub-menu">
-                                    <li><a href="#">Income Tax Planning</a></li>
-                                    <li><a href="#">Expat Tax Filings</a></li>
-                                    <li><a href="#">Succession Planning</a></li>
-                                </ul>
-                            </div>
-                            <i class="fa-solid fa-xmark service-close"></i>
-                        </div>
-            
-        </li>
-           <li class="menu-item"><a href="#contact">Contact Us</a></li>
-           <button type="submit"class= "desktop-search"><i class="fa-solid fa-magnifying-glass " style="padding: 0px 5px;"></i>Search</button>
-        </ul>
-        
-        <button type="submit" class="mobile-search"><i class="fa-solid fa-magnifying-glass " ></i></button>
-    </div>
-           
-    
-    
-    <div class="open-menu"><i class="fa-solid fa-bars"></i></div>
-    <div class="close-menu"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-    </nav>
-</header>
+          <a href="./index.html"
+            ><h1>
+              <img src="./Resources/logo.jpeg" alt="logo" />Anag & Associates
+            </h1></a
+          >
+        </div>
+        <div class="navbardiv">
+          <ul class="main-list">
+            <li class="menu-item"><a href="./index.html">Home</a></li>
+            <li class="menu-item" id="service_menu" onclick="click_services()">
+              <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+              <div class="mega-menu-wrapper slideInUp">
+                <i class="fa-solid fa-xmark service-close"></i>
+                <div class="mega-menu-col">
+                  <h5>Outsourcing Services</h5>
+                  <ul class="mega-sub-menu">
+                    <li><a href="#">Book keeping for businesses</a></li>
+                    <li><a href="#">Book keeping for CA/CPA</a></li>
+                    <li><a href="#">Payroll Outsourcing</a></li>
+                    <li><a href="#">Virtual Accounting Resource</a></li>
+                    <li><a href="#">Site visits/ Discreet Audits</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>Registration & Compliances</h5>
+                  <ul class="mega-sub-menu">
+                    <li class="bi">
+                      <a href="#"
+                        >Business Incorporation
+                        <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                      <ul class="mega-submenu">
+                        <li>Private Limited Company</li>
+                        <li>Public Limited Company</li>
+                        <li>One Person Company</li>
+                        <li>Limited Liability Partnership</li>
+                        <li>Partnership Firm</li>
+                        <li>Non Profit Company</li>
+                        <li>Nidhi / Producer Company</li>
+                        <li>Sole Proprietorship</li>
+                      </ul>
+                    </li>
+                    <li class="bi">
+                      <a href="#"
+                        >Goods & Services Tax
+                        <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                      <ul class="mega-submenu">
+                        <li>GST Registration</li>
+                        <li>GST Modification</li>
+                        <li>GST Returns</li>
+                        <li>GST Refunds</li>
+                        <li>GST Appeals</li>
+                      </ul>
+                    </li>
+                    <li class="bi">
+                      <a href="#"
+                        >Trademark <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                      <ul class="mega-submenu">
+                        <li>Trademark Registration (Company)</li>
+                        <li>Trademark Registration (Individual)</li>
+                        <li>MSME Compliance Trademark Registration</li>
+                        <li>Trademark Renewal</li>
+                      </ul>
+                    </li>
+                    <li class="bi">
+                      <a href="#"
+                        >FSSAI License <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                      <ul class="mega-submenu">
+                        <li>Basic License</li>
+                        <li>State FSSAI License</li>
+                        <li>Central FSSAI License</li>
+                      </ul>
+                    </li>
+
+                    <li><a href="#">Trade License</a></li>
+
+                    <li><a href="#">Spice Board Registration</a></li>
+                    <li><a href="#">Udyam Registration</a></li>
+                    <li><a href="#">Provident Fund & ESI</a></li>
+                    <li><a href="#">Import Export Code</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>Advisory Services</h5>
+                  <ul class="mega-sub-menu">
+                    <li><a href="#">Business proposal preparation</a></li>
+                    <li><a href="#">Bank Financing proposals</a></li>
+                    <li><a href="#">Fraud Risk Management</a></li>
+                    <li><a href="#">Internal Audit</a></li>
+                    <li><a href="#">Enterprise Risk Management</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>Tax Planning Services</h5>
+                  <ul class="mega-sub-menu">
+                    <li><a href="#">Income Tax Planning</a></li>
+                    <li><a href="#">Expat Tax Filings</a></li>
+                    <li><a href="#">Succession Planning</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item" onclick="close_services()">
+              <a href="#contact">Contact Us</a>
+            </li>
+            <button type="submit" class="desktop-search">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="padding: 0px 5px"
+              ></i
+              >Search
+            </button>
+          </ul>
+
+          <button type="submit" class="mobile-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="open-menu"><i class="fa-solid fa-bars"></i></div>
+        <div class="close-menu"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+      </nav>
+    </header>
     <div class="banner">
-    <img  src="./Resources/banner.jpg" alt="banner">
-    <div class="banner-div">
+      <img src="./Resources/banner.jpg" alt="banner" />
+      <div class="banner-div">
         <div class="update-banner"></div>
         <div class="main-banner">
-        <h1>
-            Anag Associates
-        </h1>
-        <p>
-            
-            An industry leading experience for your business and entire international team to support book keeping, payroll and business advisory across geographies.
-        </p>
-    
-    <a href="#">Read More
-    </a></div>
-</div>
-    </div>
+          <h1>Anag Associates</h1>
+          <p>
+            An industry leading experience for your business and entire
+            international team to support book keeping, payroll and business
+            advisory across geographies.
+          </p>
 
+          <a href="#">Read More </a>
+        </div>
+      </div>
+    </div>
 
     <div class="content">
-        <div class="about">
-            <h1>Who We Are</h1>
-            <p>We are a group of professional accountants, financial analysts, compliance officers and client servicing experts. With combined experience of over 15 years in client servicing and advisory, we offer a wide range of outsourcing, advisory and compliance services.</p>
-        </div>
-        <div class="our-services">
-            <h1>Our Services</h1>
-            
-            <div class="subservice-1">
-                <div class="service-1">
-                <h4>Outsourcing Services</h4>
-                <p>Looking to outsource your bookkeeping to a professional bookkeeping company or hiring a virtual resource for day to day accounting needs?
-                    With over a decade of industry experience, we offer accounting and bookkeeping services to CPAs, accounting practices and businesses in India, USA and Canada.
-                    Our bookkeeping professionals are qualified and well-trained to effectively manage your books in order.</p>
-                    <ul>
-                        <li>Book keeping for small and medium businesses</li>
-                        <li> Book keeping for Accounting/CA/CPA Firms</li>
-                        <li>Payroll Outsourcing</li>
-                        <li>Virtual Accounting Resource</li>
-                        <li>Site visit/ Discreet Audit for your operations in the US and India</li>
-                    </ul>
-                    <a href="./services/services.html#outsourcing"> Learn More</a>
-            </div>
+      <div class="about">
+        <h1>Who We Are</h1>
+        <p>
+          We are a group of professional accountants, financial analysts,
+          compliance officers and client servicing experts. With combined
+          experience of over 15 years in client servicing and advisory, we offer
+          a wide range of outsourcing, advisory and compliance services.
+        </p>
+      </div>
+      <div class="our-services">
+        <h1>Our Services</h1>
 
-            <div class="service-2">
-                <h4>Registrations & Compliances</h4>
-                <p>
-                    Regulatory frameworks are constantly evolving across sectors and around the world. As transparency rises in importance and the costs of non-compliance with laws and regulations increase, businesses everywhere strive to adapt to the growing pressure from regulatory bodies. We can help you in keep up with all requirements and more. See below for our services.
-                </p>
-                <ul>
-                    <li>Business Incorporation</li>
-                    <li>Goods & Services Tax Returns</li>
-                    <li>Tax Deducted/Collected at Source (TDS/TCS)</li>
-                    <li>Provident Fund & Employee State Insurance</li>
-                    <li>Trademark Registration</li>
-                </ul>
-                <a href="./services/services.html#registration"> Learn More</a>
-            </div>
-
-
-        </div>
-      
-                
-        <div class="subservice-2">
-            <div class="service-3">
-            <h4>Advisory Services</h4>
+        <div class="subservice-1">
+          <div class="service-1">
+            <h4>Outsourcing Services</h4>
             <p>
-                Advisory Services
-                Whether it's a start-ups or an established business, investors will always need business proposals before investing or lenders will always look for financing proposals. 
-                We at Anag, understand that your unique business needs unique advise and therefore, we use our extensive experience to bring the industry best practice at your doorsteps.</p>
-                <ul>
-                    <li>Business proposals</li>
-                    <li>Bank Financing Proposals</li>
-                    <li>Risk based auditing</li>
-                    <li>Big Data Analysis</li>
-                    
-                </ul>
-                <a href="./services/services.html#advisory"> Learn More</a>
-        </div>
-
-        <div class="service-4">
-            <h4>Tax Planning Services</h4>
-            <p>
-                Tax planning is a legal way of minimizing your tax liabilities in a year. Tax laws are complex as they offers a multitude of tax exemptions, deductions, and benefits.
-                We offer the best possible way for minimizing your tax burden by analyzing your residential status, income and expense assessment and all the exemptions and deductions applicable to you.
+              Looking to outsource your bookkeeping to a professional
+              bookkeeping company or hiring a virtual resource for day to day
+              accounting needs? With over a decade of industry experience, we
+              offer accounting and bookkeeping services to CPAs, accounting
+              practices and businesses in India, USA and Canada. Our bookkeeping
+              professionals are qualified and well-trained to effectively manage
+              your books in order.
             </p>
             <ul>
-                <li>Income Tax Planning</li>
-                <li>Expat Tax Filings</li>
-                <li>Succession Planning</li>
-               
+              <li>Book keeping for small and medium businesses</li>
+              <li>Book keeping for Accounting/CA/CPA Firms</li>
+              <li>Payroll Outsourcing</li>
+              <li>Virtual Accounting Resource</li>
+              <li>
+                Site visit/ Discreet Audit for your operations in the US and
+                India
+              </li>
+            </ul>
+            <a href="./services/services.html#outsourcing"> Learn More</a>
+          </div>
+
+          <div class="service-2">
+            <h4>Registrations & Compliances</h4>
+            <p>
+              Regulatory frameworks are constantly evolving across sectors and
+              around the world. As transparency rises in importance and the
+              costs of non-compliance with laws and regulations increase,
+              businesses everywhere strive to adapt to the growing pressure from
+              regulatory bodies. We can help you in keep up with all
+              requirements and more. See below for our services.
+            </p>
+            <ul>
+              <li>Business Incorporation</li>
+              <li>Goods & Services Tax Returns</li>
+              <li>Tax Deducted/Collected at Source (TDS/TCS)</li>
+              <li>Provident Fund & Employee State Insurance</li>
+              <li>Trademark Registration</li>
+            </ul>
+            <a href="./services/services.html#registration"> Learn More</a>
+          </div>
+        </div>
+
+        <div class="subservice-2">
+          <div class="service-3">
+            <h4>Advisory Services</h4>
+            <p>
+              Advisory Services Whether it's a start-ups or an established
+              business, investors will always need business proposals before
+              investing or lenders will always look for financing proposals. We
+              at Anag, understand that your unique business needs unique advise
+              and therefore, we use our extensive experience to bring the
+              industry best practice at your doorsteps.
+            </p>
+            <ul>
+              <li>Business proposals</li>
+              <li>Bank Financing Proposals</li>
+              <li>Risk based auditing</li>
+              <li>Big Data Analysis</li>
+            </ul>
+            <a href="./services/services.html#advisory"> Learn More</a>
+          </div>
+
+          <div class="service-4">
+            <h4>Tax Planning Services</h4>
+            <p>
+              Tax planning is a legal way of minimizing your tax liabilities in
+              a year. Tax laws are complex as they offers a multitude of tax
+              exemptions, deductions, and benefits. We offer the best possible
+              way for minimizing your tax burden by analyzing your residential
+              status, income and expense assessment and all the exemptions and
+              deductions applicable to you.
+            </p>
+            <ul>
+              <li>Income Tax Planning</li>
+              <li>Expat Tax Filings</li>
+              <li>Succession Planning</li>
             </ul>
             <a href="./services/services.html#tax">Learn More</a>
+          </div>
         </div>
-
-
-    </div>
-        </div>
+      </div>
     </div>
 
+    <div class="links">
+        <h3>IMPORTANT LINKS</h3>
+    </div>
+    <div class="link-section1">
+        
+        <div class="links1">
+            <h3>Important Login Links</h3>
+            <ul>
+                <li><i class="fa-solid fa-link"></i>
+                    <a 
+                      href="https://www.mca.gov.in/mcafoportal/showVerifyDIN.do?method=setDefaultProperty&amp;mode=16">
+                      
+                      MCA Login
+                    </a>
+                  </li>
+                
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://www.incometax.gov.in/iec/foportal"> Income Tax Login </a>
+                  </li>
+                
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://services.gst.gov.in/services/login">
+                      Goods Service Tax Login
+                    </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://www.mca.gov.in/content/mca/global/en/home.html">
+                      Ministry of Corporate Affairs
+                    </a>
+                  </li>
+                
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://www.rbi.org.in/"> Reserve Bank of India </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="http://www.fipb.gov.in"> Foreign Investment Promotion Board </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://ipindia.gov.in/"> Intellectual Property Rights India </a>
+                  </li>
+            </ul>
+        </div>
 
-<footer id="contact">
-    <div >
+        <div class="links1">
+            <h3>Check Status</h3>
+            <ul>
+                <li><i class="fa-solid fa-link"></i>
+                    <a href="https://www.incometax.gov.in/iec/foportal">
+            Know Your Pan
+                    </a>
+            </li>
+        <li><i class="fa-solid fa-link"></i>
+                    <a href="https://www.incometax.gov.in/iec/foportal">
+
+                        Know Your Tan
+            </li>
+        <li><i class="fa-solid fa-link"></i>
+                    <a href="https://www.incometax.gov.in/iec/foportal">
+
+                        Know Your Jurisdictional A.O.
+                    </a>
+            </li>
+        <li><i class="fa-solid fa-link"></i>
+                    <a href="https://services.gst.gov.in/services/arnstatus">
+
+                        Check GST Application status
+                    </a>
+            </li>
+        <li><i class="fa-solid fa-link"></i>
+                    <a href="https://tin.tin.nsdl.com/pantan/StatusTrack.html">
+
+                        Check PAN/TAN Application Status
+                    </a>
+            </li>
+        <li ><i class="fa-solid fa-link"></i>
+                    <a href="http://Check%20Incometax%20Refund%20Status">
+
+                       Check Incometax Refund Status
+                    </a>
+            </li>
+        <li><i class="fa-solid fa-link"></i>
+                    <a href="https://ipindiaonline.gov.in/tmrpublicsearch/frmmain.aspx">
+
+                        Search Trademark
+                    </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="link-section2">
+        <div class="links1">
+            <h3>Useful Login Links</h3>
+            <ul>
+                <li><i class="fa-solid fa-link"></i>
+                    <a
+                      href="https://ipindiaonline.gov.in/trademarkefiling/user/Error.aspx?aspxerrorpath=/trademarkefiling/user/frmlogin.aspx"
+                    >
+                      Trademark Application Login
+                    </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://copyright.gov.in/UserRegistration/frmLoginPage.aspx">
+                      Copyright Appication Login
+                    </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://ipindiaonline.gov.in/epatentfiling/goForLogin/doLogin">
+                      Patent Application Login
+                    </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="http://foodlicensing.fssai.gov.in/index.aspx">
+                      FSSAI Application Login
+                    </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://unifiedportal.epfindia.gov.in//"> EPF Login </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a
+                      href="https://www.esic.in/ESICInsurance1/ESICInsurancePortal/PortalLogin.aspx"
+                    >
+                      ESI Login
+                    </a>
+                  </li>
+                  <li><i class="fa-solid fa-link"></i>
+                    <a href="https://reg.gst.gov.in/registration/"> GST Registration Login </a>
+                  </li>
+            </ul>
+        </div>
+        <div class="links1">
+            <h3>
+                Check Availability
+            </h3>
+            <ul><li><i class="fa-solid fa-link"></i>
+                <a href="http://www.mca.gov.in/mcafoportal/showCheckCompanyName.do">
+                  Check Company/LLP Name Availability
+                </a>
+              </li>
+              <li><i class="fa-solid fa-link"></i>
+                <a href="http://www.mca.gov.in/mcafoportal/viewSignatoryDetails.do">
+                  Check Company/LLP Signatory Details
+                </a>
+              </li>
+              <li><i class="fa-solid fa-link"></i>
+                <a href="https://in.godaddy.com/"> Check Domain Name Availability </a>
+              </li>
+              <li><i class="fa-solid fa-link"></i>
+                <a href="http://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do">
+                  Check Company/LLP Master Data
+                </a>
+              </li>
+              <li><i class="fa-solid fa-link"></i>
+                <a href="http://www.mca.gov.in/mcafoportal/showCheckFilingStatus.do">
+                  Check Company/LLP Annual Filing Status
+                </a>
+              </li></ul>
+        </div>
+       
+    </div>
+  
+    <footer id="contact">
+      <div>
         <div class="contact">
-            <h1>Get In Touch</h1>
-            <p>
-                NSC Bose Road, Tollygunge <br>
-                Kolkata, WB, India 700040
-            </p>
-            <h3>
-                Contact-7685951222
-            </h3>
-            <h3>
-                anag.in/anmolk.sharmaco@gmail.com
-            </h3>
-            <div class="icon">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
+          <h1>Get In Touch</h1>
+          <p>
+            NSC Bose Road, Tollygunge <br />
+            Kolkata, WB, India 700040
+          </p>
+          <h3>Contact-7685951222</h3>
+          <h3>anag.in/anmolk.sharmaco@gmail.com</h3>
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </div>
         <form>
-            <div class="fname">
+          <div class="fname">
             <label for="full-name">Full Name :* </label>
-            <input type="text" name="full name" id="full-name" required >
-        </div>
-            
-        <div class="email-phone">
+            <input type="text" name="full name" id="full-name" required />
+          </div>
+
+          <div class="email-phone">
             <div>
-        <label for="phone">Phone:* </label>
-        <input type="tel" name="phone" id="phone" required>
-    </div>
-        <div>
-        <label for="email">Email:*  </label>
-        <input type="email" name="mail" id="mail" required>
-    </div>
-        </div>
-        <div class="options">
+              <label for="phone">Phone:* </label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+            <div>
+              <label for="email">Email:* </label>
+              <input type="email" name="mail" id="mail" required />
+            </div>
+          </div>
+          <div class="options">
             <label for="Services">Select Service :* </label>
             <select name="services" id="services" required>
-                <option value="" selected disabled hidden>Select an Option</option>
+              <option value="" selected disabled hidden>
+                Select an Option
+              </option>
 
-                <optgroup label="Outsourcing Services">
-                <option value="Book keeping for businesses">Book keeping for businesses</option>
-                <option value="Book keeping for CA/CPA">Book keeping for CA/CPA</option>
+              <optgroup label="Outsourcing Services">
+                <option value="Book keeping for businesses">
+                  Book keeping for businesses
+                </option>
+                <option value="Book keeping for CA/CPA">
+                  Book keeping for CA/CPA
+                </option>
                 <option value="Payroll Outsourcing">Payroll Outsourcing</option>
-                <option value="Virtual Accounting Resource">Virtual Accounting Resource</option>
-                <option value="Site visits/ Discreet Audits">Site visits/ Discreet Audits</option>
-            </optgroup>
-            
-            <optgroup label=" Registration & Compliances">
-                <option value="Business Incorporation">Business Incorporation</option>
-                <option value="Goods & Services Tax">Goods & Services Tax</option>
+                <option value="Virtual Accounting Resource">
+                  Virtual Accounting Resource
+                </option>
+                <option value="Site visits/ Discreet Audits">
+                  Site visits/ Discreet Audits
+                </option>
+              </optgroup>
+
+              <optgroup label=" Registration & Compliances">
+                <option value="Business Incorporation">
+                  Business Incorporation
+                </option>
+                <option value="Goods & Services Tax">
+                  Goods & Services Tax
+                </option>
                 <option value="Trademark">Trademark</option>
                 <option value="Udyam Registration">Udyam Registration</option>
                 <option value="Import Export Code">Import Export Code</option>
                 <option value="Trade License">Trade License</option>
                 <option value="FSSAI License">FSSAI License</option>
-                <option value="Spice Board Registration">Spice Board Registration</option>
-                <option value="Provident Fund & ESI">Provident Fund & ESI</option>
-                
-            </optgroup>
-            <optgroup label="Advisory Services">
-                <option value="Business proposal preparation">Business proposal preparation​​</option>
-                <option value="Bank Financing proposals">Bank Financing proposals</option>
-                <option value="Fraud Risk Management">Fraud Risk Management</option>
+                <option value="Spice Board Registration">
+                  Spice Board Registration
+                </option>
+                <option value="Provident Fund & ESI">
+                  Provident Fund & ESI
+                </option>
+              </optgroup>
+              <optgroup label="Advisory Services">
+                <option value="Business proposal preparation">
+                  Business proposal preparation​​
+                </option>
+                <option value="Bank Financing proposals">
+                  Bank Financing proposals
+                </option>
+                <option value="Fraud Risk Management">
+                  Fraud Risk Management
+                </option>
                 <option value="Internal Audit">Internal Audit</option>
-                <option value="Enterprise Risk Management">Enterprise Risk Management</option>
-            </optgroup>
-            <optgroup label="Tax Planning Services">
+                <option value="Enterprise Risk Management">
+                  Enterprise Risk Management
+                </option>
+              </optgroup>
+              <optgroup label="Tax Planning Services">
                 <option value="Income Tax Planning">Income Tax Planning</option>
-                <option value="Income Tax Planning">Income Tax Planning</option>
+                <option value="Income Tax Planning">Expat Tax Filings</option>
                 <option value="Succession Planning">Succession Planning</option>
-            </optgroup>
-            
-        </select>
-        </div>
-        <div class="txtar">
-        <label for="message">
-            Message: </label>
-            <textarea name="message" id="message" cols="20" rows="10" style="resize: none;" ></textarea>
-        </div>
-            <div>
-            <button type="submit" >Send Message</button>
-        </div>
+              </optgroup>
+            </select>
+          </div>
+          <div class="txtar">
+            <label for="message"> Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+              style="resize: none"
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Send Message</button>
+          </div>
         </form>
-
-    </div>
-    <div class="copyright">
-        © 2020 by Anag Associates
-    </div>
-</footer>
-<script src="index.js"></script>
-</body>
+      </div>
+      <div class="copyright">© 2020 by Anag Associates</div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
