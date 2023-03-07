@@ -399,7 +399,7 @@ ul {
 
 }
 .link-section1 h3{
-    
+    padding: 5px 0;
     text-align: center;
     background-color: #1b6ac7;
     color: white;
@@ -432,6 +432,7 @@ ul {
     
 }
 .link-section2 h3{
+  padding: 5px 0;
   background-color: #1b6ac7;
   color: white;
     text-align: center;
