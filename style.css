@@ -384,8 +384,7 @@ ul {
   transition: ease-in 0.2s;
 }
 .links{
-    background: rgb(9,9,121);
-background: linear-gradient(110deg, rgba(9,9,121,1) 35%, rgba(0,0,0,1) 100%);
+    background-color: #1b6ac7;
     color: white;
     padding: 5px;
     text-align: center;
@@ -395,19 +394,18 @@ background: linear-gradient(110deg, rgba(9,9,121,1) 35%, rgba(0,0,0,1) 100%);
     display: flex;
     justify-content: space-between;
     padding: 2% 5%;
-    margin: 2% 5%;
+    margin: 0 5%;
   
 
 }
 .link-section1 h3{
-    text-decoration: underline;
-    padding: 5px;
+    
     text-align: center;
+    background-color: #1b6ac7;
+    color: white;
 }
 .links1{
     width: 30%;
-    background: linear-gradient(110deg, rgba(9,9,121,1) 35%, rgba(0,0,0,1) 100%);
-    color: white;
     padding: 10px 5px;
 }
 .links1 ul{
@@ -421,7 +419,7 @@ background: linear-gradient(110deg, rgba(9,9,121,1) 35%, rgba(0,0,0,1) 100%);
 }
 .links1 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .links1 a:hover{
     color: #1b6ac7;
@@ -430,12 +428,12 @@ background: linear-gradient(110deg, rgba(9,9,121,1) 35%, rgba(0,0,0,1) 100%);
     display: flex;
     justify-content: space-between;
     padding: 2% 5%;
-    margin: 2% 5%;
+    margin: 0 5%;
     
 }
 .link-section2 h3{
-    text-decoration: underline;
-    padding: 5px;
+  background-color: #1b6ac7;
+  color: white;
     text-align: center;
 }
 footer div {
